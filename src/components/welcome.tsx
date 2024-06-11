@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -14,8 +14,10 @@ const Welcome = () => {
   }, [router]);
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold">Welcome</h1>
+    <div className="flex items-center justify-center h-screen w-screen text-[60px] sm:text-[100px] md:text-[200px] lg:text-[300px]">
+      <div className="transparent-text min-w-full min-h-full items-center justify-center flex">
+        Welcome
+      </div>
     </div>
   );
 };

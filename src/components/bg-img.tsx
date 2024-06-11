@@ -2,16 +2,14 @@
 import Image from "next/image";
 
 const BgImg = () => {
- 
   return (
-    <div className=" w-dvw h-dvh z-0 fixed ">
+    <div className="w-full h-full fixed z-0">
       <Image 
-      src='/background.jpg'
-      alt="background image"
-      className="dark:invert"
-      layout="fill"
-      objectFit='cover'
-      priority
+        src='/background.jpg'
+        alt="background image"
+        layout="fill"
+        objectFit='cover'
+        priority
       />
     </div>
   );
